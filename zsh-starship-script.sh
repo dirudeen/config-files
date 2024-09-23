@@ -2,13 +2,13 @@
 
 #show all running commands
 set -x;
-# exit script when exon errors 
+# exit script when there is an errors
 set -e
 # update the apt packages
 sudo apt update;
 
-# install zsh
-sudo apt install zsh;
+# install zsh and nala
+sudo apt install zsh nala -y;
 
 #install ohmyzsh
 if [ ! -d ~/.oh-my-zsh ]; then 
