@@ -44,5 +44,8 @@ fi
 # replace the defautl zshrc to the one in the config files
 rm -f ~/.zshrc && cp ~/config-files/.zshrc ~/;
 
-# execute zsh to load ohmyzsh and other configurations
+# execute zsh to initialize OhMyZsh
 exec zsh;
+
+# source zshrc config to load all the plugins
+source ~/.zshrc;
